@@ -6,7 +6,7 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour {
 
 	CharacterMove cm;
-
+    public Transform headTracker;
 	// Use this for initialization
 	void Start () {
 		cm = GetComponent<CharacterMove> ();
@@ -14,12 +14,18 @@ public class PlayerControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetAxis("Horizontal")==0)
+        float vertical = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxis("Horizontal");
+
+        //cm.Move(new Vector3(vertical, 0, horizontal));
+        cm.Move(horizontal, vertical,headTracker);
+        
+		/*if(Input.GetAxis("Vertical")==0)
 			cm.Stop();
-		if(Input.GetAxis("Horizontal")>0)
+		if(Input.GetAxis("Vertical") >0)
 			cm.MoveFront();
-		if(Input.GetAxis("Horizontal")<0)
-			cm.MoveBack();
+		if(Input.GetAxis("Vertical") <0)
+			cm.MoveBack();*/
 
 			
 	}
