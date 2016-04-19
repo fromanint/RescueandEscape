@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: 1490543b4098b4542be1008da051a319
+timeCreated: 1461020002
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: heatlhbar_0
+    21300002: heatlhbar_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: heatlhbar_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 174
+        width: 615
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 302.5, y: -16}
+        - {x: 290.5, y: -5}
+        - {x: 273.5, y: -5}
+        - {x: 268.5, y: -7}
+        - {x: 259.5, y: -14}
+        - {x: 256.5, y: -18}
+        - {x: 255.5, y: -22}
+        - {x: 259.5, y: -25}
+        - {x: 223.5, y: -41}
+        - {x: 264.5, y: -3}
+        - {x: 274.5, y: -5}
+        - {x: 282.5, y: -4}
+        - {x: 294.5, y: -1}
+        - {x: 307.5, y: 13}
+        - {x: 307.5, y: 40}
+        - {x: 292.5, y: 124}
+        - {x: 276.5, y: 129}
+        - {x: 198.5, y: 129}
+        - {x: 182.5, y: 102}
+        - {x: 170.5, y: -17}
+        - {x: -217.5, y: -16}
+        - {x: -230.5, y: 13}
+        - {x: -307.5, y: -12}
+        - {x: -307.5, y: -113}
+        - {x: -286.5, y: -129}
+        - {x: -196.5, y: -129}
+        - {x: 227.5, y: -119}
+        - {x: 307.5, y: -55}
+        - {x: 307.5, y: -38}
+    - name: heatlhbar_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 38
+        width: 481
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -240.5, y: 40}
+        - {x: -240.5, y: -40}
+        - {x: 240.5, y: -40}
+        - {x: 240.5, y: 40}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

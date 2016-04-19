@@ -108,8 +108,11 @@
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+    <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterMove.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\UI\GUIControll.cs" />
+    <Compile Include="Assets\Scripts\UI\GUISize.cs" />
     <Compile Include="Assets\Scripts\gnomeCollected.cs" />
   </ItemGroup>
   <ItemGroup>
