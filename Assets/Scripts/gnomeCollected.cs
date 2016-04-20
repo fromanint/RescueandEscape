@@ -21,7 +21,10 @@ public class gnomeCollected : MonoBehaviour {
         }
     }
 
-
+	public void Collect()
+	{
+		StartCoroutine("DestroyAnim");
+	}
 
     IEnumerator DestroyAnim() {
         Destroy(jail);

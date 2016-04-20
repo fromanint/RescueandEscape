@@ -9,4 +9,10 @@ public class LevelControl : MonoBehaviour {
     public int Rescued;
     public bool Key;
 
+	void Start()
+	{
+		Rescued = 0;
+		Key = false;
+	}
+
 }
