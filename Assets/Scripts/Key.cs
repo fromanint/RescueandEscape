@@ -14,9 +14,15 @@ public class Key : MonoBehaviour {
 	}
 
 
+    public void Collect()
+    {
+        lc.Key = true;
+        GUIControll gc = (GUIControll)FindObjectOfType(typeof(GUIControll));
+        gc.HasKey(lc);
+        Destroy(gameObject);
+    }
 
-
-	void Update ()
+        void Update ()
 	{
 		transform.Rotate(Vector3.left, speed * Time.deltaTime);
 	}
