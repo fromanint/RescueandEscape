@@ -11,9 +11,7 @@ public class GUIControll : MonoBehaviour {
     {
         LevelControl lc = (LevelControl)FindObjectOfType(typeof(LevelControl));
         RescuedGnome(lc);
-		if (Time.timeScale == 0) {
-			Time.timeScale = 1;
-		}
+	
 
     }
 
@@ -43,7 +41,10 @@ public class GUIControll : MonoBehaviour {
 			if (lc.playerHealth > 0) {
 				pu.UpdateHealth (lc);
 			} else {
-				Time.timeScale = 0;
+				foreach (PanelUpdate puc in panelUpdate)
+				{
+					puc.gameObject.SetActive(false);
+				}
 				GameOverControl go = (GameOverControl)FindObjectOfType(typeof(GameOverControl));
 				go.ShowGameOver ();
 			}

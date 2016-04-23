@@ -9,7 +9,7 @@ public class GameOverButton : MonoBehaviour {
 	[SerializeField] Image playImage;
 	[SerializeField] float seconds= 2;
 	[SerializeField]
-	string levelName;
+	int levelName = -1;
 	float fillImage;
 	bool clicking;
 	// Use this for initialization
@@ -17,6 +17,9 @@ public class GameOverButton : MonoBehaviour {
 		fillImage = 0;
 		playImage.fillAmount = 0;
 		clicking = false;
+		if (levelName == -1) {
+			levelName = SceneManager.GetActiveScene ().buildIndex;
+		}
 	}
 	
 
@@ -34,8 +37,6 @@ public class GameOverButton : MonoBehaviour {
 
 		if (clicking)
 		{
-
-			Debug.Log(fillImage);
 			playImage.fillAmount = fillImage / seconds;
 			fillImage += seconds / 100;
 
@@ -48,6 +49,7 @@ public class GameOverButton : MonoBehaviour {
 	{
 		clicking = false;
 		fillImage = 0;
+		playImage.fillAmount = 0;
 		StopCoroutine("Clicking");
 	}
 
@@ -55,6 +57,7 @@ public class GameOverButton : MonoBehaviour {
 	{
 		clicking = true;
 		yield return new WaitForSeconds(seconds);
+
 		SceneManager.LoadScene(levelName);   
 	}
 }

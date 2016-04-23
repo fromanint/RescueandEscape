@@ -8,6 +8,7 @@ public class GameOverControl : MonoBehaviour {
 
 	void Start()
 	{
+		UI.SetActive (false);
 		parent = transform.parent;
 	}
 
@@ -19,8 +20,15 @@ public class GameOverControl : MonoBehaviour {
 
 	public void ShowGameOver()
 	{
+		EnemyControl[] enemies = FindObjectsOfType<EnemyControl> () as EnemyControl[];
+		foreach (EnemyControl enemy in enemies) {
+			Destroy (enemy.gameObject);
+		}
 		UI.SetActive (true);
 		transform.parent = null;
+
+		CharacterController cc = FindObjectOfType<CharacterController> ();
+		cc.enabled = false;
 	}
 	
 
