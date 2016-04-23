@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/GameOverControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player/PlayerCombat.cs" Line="28" Column="5" />
+      <File FileName="Assets/Scripts/Enemies/EnemyControl.cs" Line="36" Column="67" />
+      <File FileName="Assets/Scripts/MainMenu/LevelSelect.cs" Line="55" Column="1" />
+      <File FileName="Assets/Scripts/UI/GameOverButton.cs" Line="17" Column="17" />
+      <File FileName="Assets/Scripts/UI/GameOverControl.cs" Line="7" Column="17" />
+      <File FileName="Assets/Scripts/Enemies/DamagePlayer.cs" Line="25" Column="5" />
+      <File FileName="Assets/Scripts/UI/GUIControll.cs" Line="46" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -11,6 +11,10 @@ public class GUIControll : MonoBehaviour {
     {
         LevelControl lc = (LevelControl)FindObjectOfType(typeof(LevelControl));
         RescuedGnome(lc);
+		if (Time.timeScale == 0) {
+			Time.timeScale = 1;
+		}
+
     }
 
     // Update is called once per frame
@@ -36,7 +40,13 @@ public class GUIControll : MonoBehaviour {
     {
         foreach (PanelUpdate pu in panelUpdate)
         {
-            pu.UpdateHealth(lc);
+			if (lc.playerHealth > 0) {
+				pu.UpdateHealth (lc);
+			} else {
+				Time.timeScale = 0;
+				GameOverControl go = (GameOverControl)FindObjectOfType(typeof(GameOverControl));
+				go.ShowGameOver ();
+			}
         }
 
 

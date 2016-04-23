@@ -58,6 +58,7 @@ public class EnemyControl : MonoBehaviour {
         }
         else
         {
+			Dead = true;
             StartCoroutine("DeadCoroutine");
         }
     }
@@ -83,7 +84,9 @@ public class EnemyControl : MonoBehaviour {
             else {
                 anim.SetBool("Attack", true);
                 attack.gameObject.SetActive(true);
-                efp.enabled = false;
+				if (!Dead) {
+					efp.enabled = false;
+				}
 
             }
             
@@ -97,8 +100,10 @@ public class EnemyControl : MonoBehaviour {
         {
             if (foundPlayer)
             {
-
-                efp.enabled = true;
+				if (!Dead) {
+					efp.enabled = true;
+				}
+                
                 anim.SetBool("Follow", true);
                 anim.SetBool("Attack", false);
             }
@@ -113,8 +118,7 @@ public class EnemyControl : MonoBehaviour {
         playAudio.clip = dieSound;
         playAudio.Play();
         anim.SetTrigger("Die");
-        efp.enabled = false;
-        
+
         yield return new WaitForSeconds(DeadTime);
 		Destroy(this.gameObject);
 	}
